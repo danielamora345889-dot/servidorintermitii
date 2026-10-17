@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="description" content="Ferretería Intermatic en Ecuador. Herramientas profesionales, materiales de construcción, plomería, electricidad y más. Envíos a todo el país. Compra segura y garantizada.">
+    <meta name="keywords" content="ferretería Ecuador, herramientas Ecuador, materiales construcción, plomería, electricidad, ferretería Quito, ferretería Guayaquil">
+    <meta name="author" content="Ferretería Intermatic">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#d32f2f">
+    <title>Ferretería Intermatic | Herramientas y Materiales en Ecuador</title>
+    <style>
+        /* ============================================
+           RESET Y ESTILOS BASE
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        /* ============================================
+           ENCABEZADO
+           ============================================ */
+        header {
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            font-size: 2rem;
+        }
+        .logo h1 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .logo p {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            letter-spacing: 2px;
+        }
+        .contact-info-header {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        .contact-info-header span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* ============================================
+           NAVEGACIÓN
+           ============================================ */
+        nav {
+            background-color: #212121;
+            padding: 0;
+            position: sticky;
+            top: 90px;
+            z-index: 99;
+        }
+        nav ul {
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 15px 20px;
+            display: block;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        nav ul li a:hover {
+            background-color: #d32f2f;
+            color: #fff;
+        }
+
+        /* ============================================
+           HERO / BANNER
+           ============================================ */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        linear-gradient(135deg, #455a64 0%, #263238 100%);
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            max-width: 800px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        /* ============================================
+           BOTONES
+           ============================================ */
+        .btn {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #b71c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(211,47,47,0.4);
+        }
+        .btn-secondary {
+            background-color: #ffc107;
+            color: #212121;
+        }
+        .btn-secondary:hover {
+            background-color: #ffb300;
+            box-shadow: 0 5px 15px rgba(255,193,7,0.4);
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #fff;
+        }
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            box-shadow: 0 5px 15px rgba(37,211,102,0.4);
+        }
+
+        /* ============================================
+           CONTENEDOR PRINCIPAL
+           ============================================ */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 60px;
+            scroll-margin-top: 120px;
+        }
+        section h2 {
+            color: #212121;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #d32f2f;
+            display: inline-block;
+        }
+        section h3 {
+            color: #d32f2f;
+            margin: 20px 0 10px;
+            font-size: 1.3rem;
+        }
+        section p {
+            margin-bottom: 15px;
+        }
+
+        /* ============================================
+           TARJETAS DE PRODUCTOS
+           ============================================ */
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .producto-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-top: 4px solid #d32f2f;
+            text-align: center;
+        }
+        .producto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .producto-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .producto-card h3 {
+            color: #212121;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .producto-card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* ============================================
+           SECCIÓN DE CONFIANZA
+           ============================================ */
+        .confianza {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .confianza-item {
+            background: #fff;
+            padding: 25px 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .confianza-item .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .confianza-item h4 {
+            color: #212121;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        .confianza-item p {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* ============================================
+           FORMULARIO
+           ============================================ */
+        .formulario {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #212121;
+            font-size: 0.95rem;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #d32f2f;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-top: 5px;
+        }
+
+        /* ============================================
+           POLÍTICAS
+           ============================================ */
+        .politica {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .politica h2 {
+            color: #212121;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #d32f2f;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .politica h3 {
+            color: #d32f2f;
+            margin: 25px 0 10px;
+            font-size: 1.15rem;
+        }
+        .politica p, .politica li {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .politica ul, .politica ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        .politica a {
+            color: #d32f2f;
+            text-decoration: underline;
+        }
+        .politica a:hover {
+            color: #b71c1c;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: #212121;
+            color: #e0e0e0;
+            padding: 50px 20px 20px;
+            margin-top: 40px;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+        .footer-col ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .footer-col ul li a:hover {
+            color: #d32f2f;
+        }
+        .footer-col p {
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #424242;
+            font-size: 0.85rem;
+            color: #9e9e9e;
+        }
+        .footer-bottom p {
+            margin-bottom: 8px;
+        }
+        .footer-bottom a {
+            color: #d32f2f;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================================
+           BANNER DE COOKIES
+           ============================================ */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #212121;
+            color: #fff;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        #cookie-banner p {
+            margin: 0;
+            font-size: 0.9rem;
+            max-width: 700px;
+        }
+        #cookie-banner a {
+            color: #ffc107;
+            text-decoration: underline;
+        }
+        #cookie-banner button {
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        #cookie-banner button:hover {
+            background-color: #b71c1c;
+        }
+        #cookie-banner button.reject {
+            background-color: #616161;
+        }
+        #cookie-banner button.reject:hover {
+            background-color: #424242;
+        }
+        .hidden {
+            display: none !important;
+        }
+
+        /* ============================================
+           BOTÓN WHATSAPP FLOTANTE
+           ============================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-decoration: none;
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #fff;
+        }
+
+        /* ============================================
+           AVISO DE SEGURIDAD SSL
+           ============================================ */
+        .ssl-badge {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            color: #2e7d32;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                top: auto;
+                position: relative;
+            }
+            nav ul li a {
+                padding: 12px 15px;
+                font-size: 0.9rem;
+            }
+            section h2 {
+                font-size: 1.5rem;
+            }
+            #cookie-banner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-info-header {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+         ENCABEZADO
+         ============================================ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🔧</span>
+                <div>
+                    <h1>FERRETERÍA INTERMATIC</h1>
+                    <p>CALIDAD Y CONFIANZA EN ECUADOR</p>
+                </div>
+            </div>
+            <div class="contact-info-header">
+                <span>📞 +593 99 123 4567</span>
+                <span>✉️ info@ferreteriaintermatic.com.ec</span>
+                <span>📍 Quito - Guayaquil - Cuenca</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         NAVEGACIÓN
+         ============================================ -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#envios">Envíos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#politicas">Políticas</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <div class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>Todo para tu Construcción y Reparación</h2>
+            <p>Herramientas profesionales, materiales de construcción, plomería, electricidad y más. Envíos a todo Ecuador.</p>
+            <a href="#productos" class="btn">Ver Productos</a>
+            <a href="https://wa.me/593991234567?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+         ============================================ -->
+    <main>
+
+        <!-- AVISO DE SEGURIDAD -->
+        <div class="ssl-badge">
+            🔒 <strong>Sitio 100% Seguro:</strong> Conexión cifrada SSL. Tus datos están protegidos y nunca compartimos tu información sin tu consentimiento.
+        </div>
+
+        <!-- SECCIÓN PRODUCTOS -->
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <p>En Ferretería Intermatic contamos con un amplio catálogo de productos de las mejores marcas, con garantía y a precios competitivos en el mercado ecuatoriano.</p>
+
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <div class="producto-icon">🔨</div>
+                    <h3>Herramientas Manuales</h3>
+                    <p>Martillos, destornilladores, llaves, alicates, sierras y todo lo que necesitas para tus proyectos.</p>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-icon">⚡</div>
+                    <h3>Electricidad</h3>
+                    <p>Cables, interruptores, tomacorrientes, breakers, luminarias y accesorios eléctricos certificados.</p>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-icon">🚰</div>
+                    <h3>Plomería</h3>
+                    <p>Tuberías PVC, grifos, llaves de paso, conexiones y todo para instalaciones hidrosanitarias.</p>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-icon">🧱</div>
+                    <h3>Materiales de Construcción</h3>
+                    <p>Cemento, hierro, bloques, arena, pintura y materiales para tu obra en Ecuador.</p>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-icon">🪚</div>
+                    <h3>Herramientas Eléctricas</h3>
+                    <p>Taladros, amoladoras, sierras eléctricas, lijadoras y equipos de las mejores marcas.</p>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-icon">🔧</div>
+                    <h3>Ferretería General</h3>
+                    <p>Tornillos, clavos, cerraduras, bisagras, pegamentos y accesorios para todo tipo de trabajos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p><strong>Ferretería Intermatic</strong> es una empresa ecuatoriana fundada con el objetivo de proveer herramientas y materiales de construcción de la más alta calidad a profesionales, contratistas y familias en todo el Ecuador.</p>
+            <p>Contamos con años de experiencia en el sector ferretero, y nuestro compromiso es ofrecer productos originales, con garantía, a precios justos y con un servicio al cliente excepcional.</p>
+
+            <h3>Nuestra Misión</h3>
+            <p>Proveer soluciones integrales en ferretería y construcción, garantizando la calidad de nuestros productos y la satisfacción de nuestros clientes en todo el territorio ecuatoriano.</p>
+
+            <h3>Nuestra Visión</h3>
+            <p>Ser la ferretería líder del Ecuador, reconocida por nuestra confiabilidad, variedad de productos y excelencia en el servicio.</p>
+
+            <div class="confianza">
+                <div class="confianza-item">
+                    <div class="icon">✅</div>
+                    <h4>Productos Originales</h4>
+                    <p>Trabajamos solo con marcas certificadas</p>
+                </div>
+                <div class="confianza-item">
+                    <div class="icon">🚚</div>
+                    <h4>Envíos a Todo Ecuador</h4>
+                    <p>Quito, Guayaquil, Cuenca y más ciudades</p>
+                </div>
+                <div class="confianza-item">
+                    <div class="icon">🔒</div>
+                    <h4>Compra Segura</h4>
+                    <p>Pagos protegidos y datos encriptados</p>
+                </div>
+                <div class="confianza-item">
+                    <div class="icon">💬</div>
+                    <h4>Atención Personalizada</h4>
+                    <p>Soporte por WhatsApp y teléfono</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN ENVÍOS -->
+        <section id="envios">
+            <h2>Envíos y Entregas</h2>
+            <p>Realizamos envíos a nivel nacional a través de las principales empresas de courier y transporte del Ecuador. Todos los pedidos se despachan el mismo día si se confirman antes de las 14h00 (hora de Ecuador continental).</p>
+
+            <h3>Zonas de Cobertura</h3>
+            <ul>
+                <li><strong>Pichincha (Quito):</strong> Entrega en 24 horas</li>
+                <li><strong>Guayas (Guayaquil):</strong> Entrega en 24-48 horas</li>
+                <li><strong>Azuay (Cuenca):</strong> Entrega en 48 horas</li>
+                <li><strong>Manabí, Tungurahua, Loja, etc.:</strong> 48-72 horas</li>
+                <li><strong>Región Amazónica e Insular (Galápagos):</strong> 3-5 días laborables</li>
+            </ul>
+
+            <h3>Costos de Envío</h3>
+            <p>El costo de envío se calcula al momento de confirmar tu pedido, según el peso y la ciudad de destino. Ofrecemos <strong>envío gratis en compras superiores a $150 USD</strong> en las principales ciudades del país.</p>
+
+            <h3>Formas de Pago</h3>
+            <ul>
+                <li>Efectivo (pago contra entrega en Quito, Guayaquil y Cuenca)</li>
+                <li>Transferencia bancaria (Banco Pichincha, Produbanco, Banco Guayaquil)</li>
+                <li>Tarjetas de crédito/débito (Visa, Mastercard)</li>
+                <li>DeUna, Payphone y otras billeteras digitales</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta, necesitas una cotización o quieres hacer un pedido? Completa el siguiente formulario o escríbenos directamente por WhatsApp.</p>
+
+            <div class="formulario">
+                <form action="#" method="POST" autocomplete="on">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required 
+                               pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,80}" 
+                               title="Ingresa un nombre válido (solo letras, mínimo 3 caracteres)"
+                               maxlength="80">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required 
+                               maxlength="100"
+                               placeholder="tucorreo@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono" name="telefono" required 
+                               pattern="[0-9+\s-]{7,15}"
+                               title="Ingresa un teléfono válido"
+                               maxlength="15"
+                               placeholder="+593 99 123 4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad *</label>
+                        <select id="ciudad" name="ciudad" required>
+                            <option value="">Selecciona tu ciudad</option>
+                            <option value="Quito">Quito</option>
+                            <option value="Guayaquil">Guayaquil</option>
+                            <option value="Cuenca">Cuenca</option>
+                            <option value="Ambato">Ambato</option>
+                            <option value="Manta">Manta</option>
+                            <option value="Loja">Loja</option>
+                            <option value="Otra">Otra</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required 
+                                  maxlength="1000"
+                                  placeholder="Cuéntanos qué producto necesitas..."></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">He leído y acepto la <a href="#privacidad">Política de Privacidad</a>, los <a href="#terminos">Términos y Condiciones</a> y la <a href="#cookies">Política de Cookies</a>. Autorizo el tratamiento de mis datos personales conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador.</label>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <h3>Información de Contacto Directo</h3>
+            <p><strong>📍 Dirección Matriz:</strong> Av. Amazonas N34-120 y Av. Naciones Unidas, Edificio Torre Amazonas, Piso 5, Quito, Ecuador</p>
+            <p><strong>📍 Sucursal Guayaquil:</strong> Av. 9 de Octubre #1234 y Malecón, Guayaquil, Ecuador</p>
+            <p><strong>📞 Teléfono:</strong> +593 2 123 4567 / +593 99 123 4567</p>
+            <p><strong>✉️ Email:</strong> info@ferreteriaintermatic.com.ec</p>
+            <p><strong>🕐 Horario:</strong> Lunes a Viernes 8h00-18h00, Sábados 9h00-14h00</p>
+        </section>
+
+        <!-- ============================================
+             POLÍTICAS
+             ============================================ -->
+        <section id="politicas">
+            <h2>Políticas y Términos Legales</h2>
+            <p>En Ferretería Intermatic nos comprometemos a operar de manera transparente y conforme a las leyes ecuatorianas. A continuación, detallamos nuestras políticas.</p>
+        </section>
+
+        <!-- POLÍTICA DE PRIVACIDAD -->
+        <div class="politica" id="privacidad">
+            <h2>Política de Privacidad</h2>
+            <p><strong>Última actualización:</strong> 16 de octubre de 2026</p>
+
+            <h3>1. Identificación del Responsable</h3>
+            <p><strong>Ferretería Intermatic</strong>, con RUC 1792345678001, domiciliada en Av. Amazonas N34-120 y Av. Naciones Unidas, Quito, Ecuador, es responsable del tratamiento de tus datos personales, conforme a la <strong>Ley Orgánica de Protección de Datos Personales (LOPDP)</strong> del Ecuador y su reglamento.</p>
+
+            <h3>2. Datos que Recopilamos</h3>
+            <p>Podemos recopilar los siguientes datos personales:</p>
+            <ul>
+                <li>Nombre y apellidos</li>
+                <li>Correo electrónico</li>
+                <li>Número de teléfono / WhatsApp</li>
+                <li>Dirección de envío</li>
+                <li>Ciudad de residencia</li>
+                <li>Datos de navegación (cookies, dirección IP, tipo de navegador)</li>
+            </ul>
+
+            <h3>3. Finalidad del Tratamiento</h3>
+            <p>Utilizamos tus datos personales para:</p>
+            <ul>
+                <li>Atender tus consultas, cotizaciones y pedidos</li>
+                <li>Procesar y entregar tus compras</li>
+                <li>Enviarte información comercial, promociones y ofertas (con tu consentimiento previo)</li>
+                <li>Mejorar nuestros servicios y la experiencia del usuario en el sitio web</li>
+                <li>Cumplir con obligaciones legales, contables y tributarias</li>
+                <li>Prevenir fraudes y garantizar la seguridad de las transacciones</li>
+            </ul>
+
+            <h3>4. Base Legal</h3>
+            <p>El tratamiento de tus datos se basa en tu <strong>consentimiento expreso</strong>, en la <strong>ejecución de un contrato</strong> (cuando realizas una compra) y en el <strong>interés legítimo</strong> de Ferretería Intermatic para mejorar sus servicios.</p>
+
+            <h3>5. Uso de Google Ads y Remarketing</h3>
+            <p>Este sitio web utiliza <strong>Google Ads</strong> y su función de <strong>remarketing</strong>. Esto significa que podemos mostrar anuncios a los usuarios que han visitado previamente nuestro sitio web en otros sitios de la Red de Display de Google.</p>
+            <p>Para ello, Google y otros terceros proveedores utilizan cookies que recopilan información sobre tus visitas a este y otros sitios web. Puedes desactivar la publicidad personalizada visitando la <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Configuración de anuncios de Google</a> o <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>.</p>
+
+            <h3>6. Compartir Información con Terceros</h3>
+            <p>No vendemos ni alquilamos tus datos personales. Podemos compartir tu información únicamente con:</p>
+            <ul>
+                <li>Empresas de courier y transporte para la entrega de productos</li>
+                <li>Proveedores de servicios de pago (bancos, pasarelas de pago)</li>
+                <li>Autoridades competentes cuando exista obligación legal</li>
+            </ul>
+
+            <h3>7. Conservación de Datos</h3>
+            <p>Conservamos tus datos personales únicamente durante el tiempo necesario para cumplir con las finalidades descritas y las obligaciones legales aplicables. Posteriormente, serán eliminados o anonimizados de forma segura.</p>
+
+            <h3>8. Tus Derechos (Derechos ARCO)</h3>
+            <p>Como titular de los datos, tienes derecho a:</p>
+            <ul>
+                <li><strong>Acceder</strong> a tus datos personales</li>
+                <li><strong>Rectificar</strong> datos inexactos o incompletos</li>
+                <li><strong>Cancelar/Eliminar</strong> tus datos cuando ya no sean necesarios</li>
+                <li><strong>Oponerte</strong> al tratamiento de tus datos</li>
+                <li><strong>Revocar</strong> el consentimiento otorgado</li>
+                <li><strong>Portar</strong> tus datos a otro responsable</li>
+            </ul>
+            <p>Para ejercer estos derechos, escríbenos a <strong>privacidad@ferreteriaintermatic.com.ec</strong> adjuntando copia de tu cédula de identidad.</p>
+
+            <h3>9. Seguridad de los Datos</h3>
+            <p>Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos personales contra accesos no autorizados, pérdida, alteración o divulgación. Utilizamos cifrado SSL/TLS, firewalls y control de accesos restringidos.</p>
+
+            <h3>10. Menores de Edad</h3>
+            <p>Nuestros servicios no están dirigidos a menores de 18 años. No recopilamos intencionalmente datos de menores sin el consentimiento de sus representantes legales.</p>
+
+            <h3>11. Cambios en esta Política</h3>
+            <p>Nos reservamos el derecho de modificar esta política en cualquier momento. Los cambios serán publicados en esta página con la fecha de actualización correspondiente.</p>
+
+            <h3>12. Contacto</h3>
+            <p>Para consultas sobre esta política, contáctanos en <strong>privacidad@ferreteriaintermatic.com.ec</strong> o al teléfono <strong>+593 2 123 4567</strong>.</p>
+        </div>
+
+        <!-- TÉRMINOS Y CONDICIONES -->
+        <div class="politica" id="terminos">
+            <h2>Términos y Condiciones</h2>
+            <p><strong>Última actualización:</strong> 16 de octubre de 2026</p>
+
+            <h3>1. Aceptación de los Términos</h3>
+            <p>El acceso y uso del sitio web de <strong>Ferretería Intermatic</strong> implica la aceptación plena y sin reservas de los presentes Términos y Condiciones. Si no estás de acuerdo, te pedimos abstenerte de utilizar el sitio.</p>
+
+            <h3>2. Uso del Sitio Web</h3>
+            <p>El usuario se compromete a utilizar este sitio web de forma lícita, sin realizar actividades que puedan dañar, sobrecargar o deteriorar el sitio, ni interferir con su normal funcionamiento. Queda prohibido:</p>
+            <ul>
+                <li>Usar el sitio para fines ilegales o no autorizados</li>
+                <li>Introducir virus, malware o código dañino</li>
+                <li>Intentar acceder a áreas restringidas sin autorización</li>
+                <li>Recopilar datos de otros usuarios sin su consentimiento</li>
+                <li>Realizar actividades de scraping o extracción masiva de datos</li>
+            </ul>
+
+            <h3>3. Productos y Precios</h3>
+            <p>Todos los precios están expresados en <strong>dólares de los Estados Unidos de América (USD)</strong>, moneda oficial del Ecuador. Los precios pueden estar sujetos a cambios sin previo aviso. Nos reservamos el derecho de modificar, suspender o discontinuar productos en cualquier momento.</p>
+            <p>Las imágenes de los productos son de referencia y pueden variar ligeramente respecto al producto final. Nos esforzamos por mostrar la información más precisa posible.</p>
+
+            <h3>4. Proceso de Compra</h3>
+            <p>El proceso de compra se completa al confirmar el pedido y realizar el pago correspondiente. Una vez confirmado, recibirás un correo electrónico o mensaje de WhatsApp con los detalles de tu pedido y el tiempo estimado de entrega.</p>
+
+            <h3>5. Política de Devoluciones y Garantías</h3>
+            <p>Aceptamos devoluciones dentro de los <strong>7 días calendario</strong> posteriores a la recepción del producto, siempre que:</p>
+            <ul>
+                <li>El producto esté en su empaque original, sin uso y en perfectas condiciones</li>
+                <li>Se presente la factura o comprobante de compra</li>
+                <li>El producto no haya sido dañado por mal uso del cliente</li>
+            </ul>
+            <p>Los productos eléctricos y herramientas tienen garantía del fabricante según las condiciones de cada marca. No se aceptan devoluciones de productos personalizados o cortados a medida.</p>
+
+            <h3>6. Propiedad Intelectual</h3>
+            <p>Todo el contenido de este sitio web (textos, imágenes, logotipos, diseño, código) es propiedad de Ferretería Intermatic o de sus licenciantes, y está protegido por las leyes de propiedad intelectual del Ecuador y tratados internacionales. Queda prohibida su reproducción total o parcial sin autorización expresa.</p>
+
+            <h3>7. Limitación de Responsabilidad</h3>
+            <p>Ferretería Intermatic no se hace responsable por:</p>
+            <ul>
+                <li>Daños derivados del uso inadecuado de los productos adquiridos</li>
+                <li>Interrupciones temporales del servicio por causas de fuerza mayor</li>
+                <li>Inexactitudes en la información proporcionada por terceros</li>
+                <li>Pérdidas indirectas, incidentales o consecuentes</li>
+            </ul>
+
+            <h3>8. Enlaces a Terceros</h3>
+            <p>Este sitio puede contener enlaces a sitios web de terceros. No controlamos ni somos responsables del contenido, políticas de privacidad o prácticas de dichos sitios.</p>
+
+            <h3>9. Modificaciones</h3>
+            <p>Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor desde su publicación en el sitio web.</p>
+
+            <h3>10. Legislación Aplicable y Jurisdicción</h3>
+            <p>Estos Términos y Condiciones se rigen por las leyes de la <strong>República del Ecuador</strong>. Para cualquier controversia, las partes se someten a la jurisdicción de los jueces y tribunales competentes de la ciudad de Quito, Ecuador.</p>
+
+            <h3>11. Contacto</h3>
+            <p>Para consultas sobre estos términos, escríbenos a <strong>legal@ferreteriaintermatic.com.ec</strong>.</p>
+        </div>
+
+        <!-- POLÍTICA DE COOKIES -->
+        <div class="politica" id="cookies">
+            <h2>Política de Cookies</h2>
+            <p><strong>Última actualización:</strong> 16 de octubre de 2026</p>
+
+            <h3>1. ¿Qué son las Cookies?</h3>
+            <p>Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo (ordenador, tableta o teléfono móvil) cuando visitas un sitio web. Permiten que el sitio recuerde tus acciones y preferencias durante un período de tiempo.</p>
+
+            <h3>2. Tipos de Cookies que Utilizamos</h3>
+            <ul>
+                <li><strong>Cookies Esenciales:</strong> Necesarias para el funcionamiento básico del sitio (carrito de compras, sesión de usuario). Sin ellas, el sitio no funciona correctamente.</li>
+                <li><strong>Cookies de Rendimiento:</strong> Nos ayudan a entender cómo los visitantes interactúan con el sitio (Google Analytics), recopilando información de forma anónima.</li>
+                <li><strong>Cookies de Funcionalidad:</strong> Permiten recordar tus preferencias (idioma, región, tamaño de fuente).</li>
+                <li><strong>Cookies de Publicidad:</strong> Utilizadas por Google Ads y otros terceros para mostrarte anuncios relevantes basados en tus intereses y visitas previas.</li>
+            </ul>
+
+            <h3>3. Cookies de Terceros</h3>
+            <p>Al utilizar Google Ads y su función de remarketing, Google y sus partners pueden colocar cookies en tu dispositivo. Consulta la <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer">Política de Cookies de Google</a> para más información.</p>
+
+            <h3>4. Gestión y Desactivación de Cookies</h3>
+            <p>Puedes gestionar o desactivar las cookies a través de la configuración de tu navegador:</p>
+            <ul>
+                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+                <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+                <li><a href="https://support.microsoft.com/es-es/microsoft-edge" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+            </ul>
+            <p>Ten en cuenta que desactivar ciertas cookies puede afectar la funcionalidad del sitio web.</p>
+
+            <h3>5. Consentimiento</h3>
+            <p>Al continuar navegando en nuestro sitio tras visualizar el banner de cookies y hacer clic en "Aceptar", otorgas tu consentimiento para el uso de cookies conforme a esta política. Puedes retirar tu consentimiento en cualquier momento.</p>
+
+            <h3>6. Cambios en la Política de Cookies</h3>
+            <p>Cualquier modificación será publicada en esta página con la fecha de actualización correspondiente.</p>
+        </div>
+
+        <!-- POLÍTICA DE SEGURIDAD -->
+        <div class="politica" id="seguridad">
+            <h2>Política de Seguridad</h2>
+            <p><strong>Última actualización:</strong> 16 de octubre de 2026</p>
+
+            <h3>1. Compromiso con la Seguridad</h3>
+            <p>En Ferretería Intermatic tomamos muy en serio la seguridad de tu información. Implementamos medidas técnicas y organizativas de última generación para proteger tus datos contra accesos no autorizados, alteración, divulgación o destrucción.</p>
+
+            <h3>2. Medidas Técnicas Implementadas</h3>
+            <ul>
+                <li><strong>Cifrado SSL/TLS:</strong> Toda comunicación entre tu navegador y nuestro servidor está cifrada mediante HTTPS.</li>
+                <li><strong>Firewall:</strong> Sistema de protección perimetral contra accesos no autorizados.</li>
+                <li><strong>Autenticación:</strong> Acceso restringido a datos sensibles mediante autenticación de dos factores.</li>
+                <li><strong>Monitoreo 24/7:</strong> Vigilancia continua de posibles amenazas y vulnerabilidades.</li>
+                <li><strong>Copias de Seguridad:</strong> Respaldos periódicos cifrados de toda la información.</li>
+                <li><strong>Actualizaciones:</strong> Parches de seguridad aplicados de forma regular.</li>
+            </ul>
+
+            <h3>3. Protección de Pagos</h3>
+            <p>Los pagos realizados a través de nuestro sitio web se procesan mediante pasarelas de pago certificadas bajo el estándar <strong>PCI DSS</strong>. No almacenamos datos completos de tarjetas de crédito en nuestros servidores.</p>
+
+            <h3>4. Responsabilidades del Usuario</h3>
+            <p>Para mantener la seguridad de tu cuenta, te recomendamos:</p>
+            <ul>
+                <li>No compartir tus contraseñas con terceros</li>
+                <li>Utilizar contraseñas robustas y únicas</li>
+                <li>Mantener actualizado tu navegador y sistema operativo</li>
+                <li>No acceder a tu cuenta desde redes Wi-Fi públicas no seguras</li>
+                <li>Reportar cualquier actividad sospechosa a nuestro equipo</li>
+            </ul>
+
+            <h3>5. Notificación de Incidentes</h3>
+            <p>En caso de detectar una brecha de seguridad que afecte tus datos personales, te notificaremos a la brevedad posible conforme a lo establecido en la Ley Orgánica de Protección de Datos Personales del Ecuador.</p>
+
+            <h3>6. Contacto de Seguridad</h3>
+            <p>Para reportar vulnerabilidades o incidentes de seguridad, escríbenos a <strong>seguridad@ferreteriaintermatic.com.ec</strong>.</p>
+        </div>
+
+        <!-- POLÍTICA DE ENVÍOS Y DEVOLUCIONES -->
+        <div class="politica" id="devoluciones">
+            <h2>Política de Envíos y Devoluciones</h2>
+            <p><strong>Última actualización:</strong> 16 de octubre de 2026</p>
+
+            <h3>1. Cobertura de Envíos</h3>
+            <p>Realizamos envíos a todo el territorio ecuatoriano, incluyendo la región Costa, Sierra, Amazonía y Galápagos, a través de empresas de courier certificadas.</p>
+
+            <h3>2. Tiempos de Entrega</h3>
+            <ul>
+                <li>Quito y área metropolitana: 24 horas</li>
+                <li>Guayaquil, Cuenca, Ambato: 24-48 horas</li>
+                <li>Otras ciudades: 48-72 horas</li>
+                <li>Galápagos: 5-7 días laborables</li>
+            </ul>
+            <p>Los tiempos son estimados y pueden variar por condiciones climáticas, feriados o causas de fuerza mayor.</p>
+
+            <h3>3. Costos de Envío</h3>
+            <p>El costo se calcula según el peso, dimensiones y destino. Envío gratis en compras superiores a <strong>$150 USD</strong> en Quito, Guayaquil y Cuenca.</p>
+
+            <h3>4. Devoluciones</h3>
+            <p>Aceptamos devoluciones dentro de los <strong>7 días calendario</strong> posteriores a la recepción, siempre que el producto esté sin uso, en su empaque original y con la factura correspondiente. Los gastos de envío por devolución corren por cuenta del cliente, salvo en casos de producto defectuoso o error en el envío.</p>
+
+            <h3>5. Garantías</h3>
+            <p>Todos nuestros productos cuentan con garantía del fabricante. Para hacer efectiva la garantía, comunícate con nuestro servicio al cliente y presenta la factura de compra. El tiempo de garantía varía según el producto y la marca.</p>
+
+            <h3>6. Productos No Devolubles</h3>
+            <ul>
+                <li>Productos personalizados o cortados a medida</li>
+                <li>Productos de higiene personal</li>
+                <li>Productos con señales de uso o daño por parte del cliente</li>
+            </ul>
+
+            <h3>7. Reembolsos</h3>
+            <p>Los reembolsos se procesan en un plazo de 5 a 10 días hábiles, mediante el mismo método de pago utilizado en la compra.</p>
+
+            <h3>8. Contacto</h3>
+            <p>Para gestionar una devolución o garantía, escríbenos a <strong>devoluciones@ferreteriaintermatic.com.ec</strong> o llama al <strong>+593 2 123 4567</strong>.</p>
+        </div>
+
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Ferretería Intermatic</h4>
+                <p>Tu ferretería de confianza en Ecuador. Productos de calidad, precios justos y servicio excepcional.</p>
+                <p>RUC: 1792345678001</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#envios">Envíos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Políticas</h4>
+                <ul>
+                    <li><a href="#privacidad">Política de Privacidad</a></li>
+                    <li><a href="#terminos">Términos y Condiciones</a></li>
+                    <li><a href="#cookies">Política de Cookies</a></li>
+                    <li><a href="#seguridad">Política de Seguridad</a></li>
+                    <li><a href="#devoluciones">Envíos y Devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📍 Av. Amazonas N34-120, Quito</p>
+                <p>📞 +593 2 123 4567</p>
+                <p>📱 +593 99 123 4567</p>
+                <p>✉️ info@ferreteriaintermatic.com.ec</p>
+                <p>🕐 Lun-Vie 8h00-18h00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ferretería Intermatic. Todos los derechos reservados.</p>
+            <p>
+                <a href="#privacidad">Privacidad</a> |
+                <a href="#terminos">Términos</a> |
+                <a href="#cookies">Cookies</a> |
+                <a href="#seguridad">Seguridad</a> |
+                <a href="#devoluciones">Devoluciones</a>
+            </p>
+            <p>Sitio web con conexión cifrada SSL 🔒 — Compra 100% segura</p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BOTÓN WHATSAPP FLOTANTE
+         ============================================ -->
+    <a href="https://wa.me/593991234567?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">💬</a>
+
+    <!-- ============================================
+         BANNER DE COOKIES
+         ============================================ -->
+    <div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+        <p>🍪 Utilizamos cookies propias y de terceros (incluido Google Ads) para mejorar tu experiencia, analizar el tráfico y mostrarte publicidad personalizada. Al hacer clic en "Aceptar", consientes su uso conforme a nuestra <a href="#cookies">Política de Cookies</a>.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <button id="accept-cookies" type="button">Aceptar</button>
+            <button id="reject-cookies" class="reject" type="button">Rechazar</button>
+        </div>
+    </div>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            // ============================================
+            // GESTIÓN DEL BANNER DE COOKIES
+            // ============================================
+            document.addEventListener('DOMContentLoaded', function() {
+                const cookieBanner = document.getElementById('cookie-banner');
+                const acceptButton = document.getElementById('accept-cookies');
+                const rejectButton = document.getElementById('reject-cookies');
+
+                // Verificar si ya se tomó una decisión previamente
+                const cookieChoice = localStorage.getItem('cookieConsent');
+
+                if (cookieChoice) {
+                    cookieBanner.classList.add('hidden');
+                }
+
+                // Aceptar cookies
+                acceptButton.addEventListener('click', function() {
+                    localStorage.setItem('cookieConsent', 'accepted');
+                    localStorage.setItem('cookieConsentDate', new Date().toISOString());
+                    cookieBanner.classList.add('hidden');
+                    // Aquí se activarían las cookies de análisis y publicidad
+                    console.log('Cookies aceptadas por el usuario');
+                });
+
+                // Rechazar cookies
+                rejectButton.addEventListener('click', function() {
+                    localStorage.setItem('cookieConsent', 'rejected');
+                    localStorage.setItem('cookieConsentDate', new Date().toISOString());
+                    cookieBanner.classList.add('hidden');
+                    // Aquí se desactivarían las cookies no esenciales
+                    console.log('Cookies rechazadas por el usuario');
+                });
+            });
+
+            // ============================================
+            // SCROLL SUAVE PARA ENLACES INTERNOS
+            // ============================================
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // ============================================
+            // VALIDACIÓN DEL FORMULARIO
+            // ============================================
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validación básica de campos
+                    const nombre = document.getElementById('nombre').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const telefono = document.getElementById('telefono').value.trim();
+                    const ciudad = document.getElementById('ciudad').value;
+                    const mensaje = document.getElementById('mensaje').value.trim();
+                    const acepto = document.getElementById('acepto').checked;
+
+                    if (!nombre || !email || !telefono || !ciudad || !mensaje || !acepto) {
+                        alert('Por favor, completa todos los campos obligatorios y acepta las políticas.');
+                        return;
+                    }
+
+                    // Validación de email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        alert('Por favor, ingresa un correo electrónico válido.');
+                        return;
+                    }
+
+                    // Simulación de envío exitoso
+                    alert('¡Gracias por contactarnos! Hemos recibido tu mensaje. Te responderemos a la brevedad posible.');
+                    contactForm.reset();
+                });
+            }
+
+            // ============================================
+            // PROTECCIÓN CONTRA CLICS MALICIOSOS
+            // ============================================
+            // Todos los enlaces externos abren en nueva pestaña con noopener
+            document.querySelectorAll('a[target="_blank"]').forEach(function(link) {
+                if (!link.hasAttribute('rel')) {
+                    link.setAttribute('rel', 'noopener noreferrer');
+                }
+            });
+
+        })();
+    </script>
+
+</body>
+</html>
